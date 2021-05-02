@@ -368,6 +368,22 @@
               </li>
             </ul>
           </div>
+
+          <div class="subscribe">
+            <b class="title-subscribe">Подпишитесь на рассылку</b>
+
+            <form name="subscribe" class="subscribe-form">
+              <input type="email" placeholder="E-mail" class="input-email">
+
+              <button type="submit" class="button-primary button-send">
+                <span>Подписатся</span>
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/firsticon.svg#icon-send"></use>
+              </svg>
+              </button>
+            </form>
+            
+          </div>
         </address>
       </div>
     </footer>
@@ -378,6 +394,36 @@
             <use href="./images/firsticon.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form name="feedback-form" class="feedback-form">
+
+          <div class="form-group">
+            <label for="name" class="modal-label">Имя</label>
+            <input type="text" name="name" id="name" class="modal-input">
+          </div>
+
+          <div class="form-group">
+            <label for="phone-number" class="modal-label">Телефон</label>
+            <input type="tel" name="phone" id="phone-number" class="modal-input">
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="modal-label">Почта</label>
+            <input type="email" name="mail" id="email" class="modal-input">
+          </div>
+
+          <div class="form-group">
+            <label for="comments" class="modal-label">Комментарий</label>
+            <textarea name="comments" id="coments" rows="10" placeholder="Введите текст" class="modal-textarea"></textarea>
+          </div>
+
+          <div class="agreement">
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="#" class="link-agreement">Условия договора</a></label>
+          </div>
+
+          <button type="submit" class="button-primary button-modal">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

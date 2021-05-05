@@ -408,46 +408,53 @@
           </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form name="feedback-form" class="feedback-form">
-          <label class="form-group">
-            <span class="modal-label">Имя</span>
-            <input type="text" name="name" class="modal-input" />
-            <svg class="input-icon" width="18" height="18">
-              <use href="./images/firsticon.svg#icon-person-black"></use>
-            </svg>
-          </label>
+        <form name="feedback-form">
+          <ul class="list-modal list">
+            <li class="list-modal__item">
+              <label class="form-group">
+                <span class="modal-label">Имя</span>
+                <input type="text" name="name" class="modal-input" />
+                <svg class="input-icon" width="18" height="18">
+                  <use href="./images/firsticon.svg#icon-person-black"></use>
+                </svg>
+              </label>
+            </li>
 
-          <label class="form-group">
-            <span class="modal-label"> Телефон </span>
-            <input type="tel" name="phone" class="modal-input" />
-            <svg class="input-icon" width="18" height="18">
-              <use href="./images/firsticon.svg#icon-phone"></use>
-            </svg>
-          </label>
+            <li class="list-modal__item">
+              <label class="form-group">
+                <span class="modal-label"> Телефон </span>
+                <input type="tel" name="phone" class="modal-input" />
+                <svg class="input-icon" width="18" height="18">
+                  <use href="./images/firsticon.svg#icon-phone"></use>
+                </svg>
+              </label>
+            </li>
 
-          <label class="form-group">
-            <span class="modal-label"> Почта </span>
-            <input type="email" name="mail" class="modal-input" />
-            <svg class="input-icon" width="18" height="18">
-              <use href="./images/firsticon.svg#icon-post"></use>
-            </svg>
-          </label>
+            <li class="list-modal__item">
+              <label class="form-group">
+                <span class="modal-label"> Почта </span>
+                <input type="email" name="mail" class="modal-input" />
+                <svg class="input-icon" width="18" height="18">
+                  <use href="./images/firsticon.svg#icon-post"></use>
+                </svg>
+              </label>
+            </li>
 
-          <label class="form-group">
-            <span class="modal-label"> Комментарий </span>
-            <textarea name="comments" rows="10" placeholder="Введите текст" class="modal-textarea"></textarea>
-          </label>
+            <li class="list-modal__item">
+              <label class="form-group">
+                <span class="modal-label"> Комментарий </span>
+                <textarea name="comments" rows="10" placeholder="Введите текст" class="modal-textarea"></textarea>
+              </label>
+            </li>
 
-          <label class="agreement">
-            <input type="checkbox" name="agreement" class="checkbox" />
-            <span class="custom-checkbox">
-              <svg class="icon-check" width="16" height="15">
-                <use href="./images/firsticon.svg#icon-chek"></use>
-              </svg>
-            </span>
-
-            Соглашаюсь с рассылкой и принимаю <a href="#" class="link-agreement">Условия договора</a>
-          </label>
+            <li class="list-modal__item">
+              <label class="agreement">
+                <input type="checkbox" name="agreement" class="checkbox" />
+                <span class="custom-checkbox"><span class="checkbox-icon"></span> </span>
+                Соглашаюсь с рассылкой и принимаю <a href="#" class="link-agreement">Условия договора</a>
+              </label>
+            </li>
+          </ul>
 
           <button type="submit" class="button-primary button-modal">Отправить</button>
         </form>

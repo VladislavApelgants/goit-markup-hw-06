@@ -836,7 +836,7 @@ img {
   margin-bottom: 20px;
 }
 
-.list-modal__item:nth-child(5) {
+.list-modal {
   margin-bottom: 30px;
 }
 .form-group:focus-within .input-icon {
